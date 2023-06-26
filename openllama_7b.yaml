@@ -21,7 +21,7 @@ config_file: |
 files:
     - filename: "open-llama-7b-q4_0.bin"
       sha256: "b36fe08e448a2a9c3a254e35f881f904cf197794a71970883bdb562b3eb0e7a4"
-      uri: "https://huggingface.co/SlyEcho/open_llama_7b_ggml/resolve/main/open-llama-7b-q4_0.bin"
+      uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/open-llama-7b-q4_0.bin"
 
 prompt_templates:
 - name: "openllama-completion"

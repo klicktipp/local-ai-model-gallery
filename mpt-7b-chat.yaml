@@ -25,7 +25,7 @@ config_file: |
 files:
     - filename: "ggml-mpt-7b-chat.bin"
       sha256: "a0cfb5cb23815f5f533725218468a634debb6f8ed78b07070dc68dda368136db"
-      uri: "https://gpt4all.io/models/ggml-mpt-7b-chat.bin"
+      uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/ggml-mpt-7b-chat.bin"
 
 prompt_templates:
 - name: "mpt-completion"

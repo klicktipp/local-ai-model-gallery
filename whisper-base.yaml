@@ -15,4 +15,4 @@ config_file: |
 files:
 - filename: "ggml-whisper-base.bin"
   sha256: "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"
-  uri: "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"
+  uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/ggml-base.bin"
