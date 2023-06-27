@@ -28,7 +28,7 @@ config_file: |
 files:
 - filename: "Q8_0-RWKV-4-Raven-7B-v11x-Eng99-Other1-20230429-ctx8192"
   sha256: "75d252da63405e9897bff2957f9b6b1c94d496a50e4772d5fc1ec22fb048f9b5"
-  uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/Q8_0-RWKV-4-Raven-7B-v11x-Eng99%25-Other1%25-20230429-ctx8192.bin"
+  uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/Q8_0-RWKV-4-Raven-7B-v11x-Eng99%25-Other1%25-20230429-ctx8192.bin"
 - filename: "Q8_0-RWKV-4-Raven-7B-v11x-Eng99-Other1-20230429-ctx8192.tokenizer.json"
   sha256: "56ac4821e129d2c520fdaba60abd920fa852ada51b45c0dd52bbb6bd8c985ade"
   uri: "https://raw.githubusercontent.com/saharNooby/rwkv.cpp/5eb8f09c146ea8124633ab041d9ea0b1f1db4459/rwkv/20B_tokenizer.json"

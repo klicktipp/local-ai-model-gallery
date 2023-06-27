@@ -19,7 +19,7 @@ config_file: |
 files:
     - filename: "ggml-gpt4all-j-v1.3-groovy.bin"
       sha256: "3b2fd7cca97284467de0be8f638925f40cbff4c70a2e10ba1094f83bfa24d86b"
-      uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin"
+      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin"
 
 prompt_templates:
 - name: "gpt4all-completion"

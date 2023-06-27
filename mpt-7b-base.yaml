@@ -21,4 +21,4 @@ config_file: |
 files:
     - filename: "ggml-mpt-7b-base.bin"
       sha256: "1c612d7a8553f0f367197d323f4c3d68a07c204353e772a3b2fda436669f1ea0"
-      uri: "s3://kt-ai-stack/local-ai/gpt4all.io/models/ggml-mpt-7b-base.bin"
+      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/ggml-mpt-7b-base.bin"
