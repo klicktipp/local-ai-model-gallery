@@ -1,0 +1,47 @@
+name: "falcon-40b-instruct"
+
+description: |
+    Falcon-40B-Instruct is a 40B parameters causal decoder-only model built by TII based on Falcon-40B and finetuned on a mixture of Baize.
+    It is made available under the Apache 2.0 license.
+
+license: "Apache 2.0"
+
+urls:
+  - https://huggingface.co/tiiuae/falcon-40b-instruct
+  - https://huggingface.co/TheBloke/falcon-40b-instruct-GGML
+
+config_file: |
+    backend:falcon-40b-instruct
+    parameters:
+      model: falcon40b-instruct.ggmlv3.q5_K_S.bin
+      top_k: 80
+      temperature: 0.8
+      top_p: 0.7
+    context_size: 16384
+    roles:
+      user: "USER:"
+      system: "SYSTEM:"
+      assistant: "ASSISTANT:"
+    template:
+      completion: "falcon-completion"
+      chat: falcon-chat
+
+files:
+    - filename: "falcon40b-instruct.ggmlv3.q5_K_S.bin"
+      sha256: "3b2fd7cca97284467de0be8f638925f40cbff4c70a2e10ba1094f83bfa24d86b"
+      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/falcon40b-instruct.ggmlv3.q5_K_S.bin"
+
+prompt_templates:
+- name: "falcon-completion"
+  content: |
+    Complete the following text: {{.Input}}
+
+- name: "falcon-chat"
+  content: |
+    The prompt below is a question to answer, a task to complete, or a conversation to respond to; 
+    decide which and write an appropriate response.
+    Remember this is a chat between a user and an assistant.
+    
+    {{.Input}}
+
+    ASSISTANT:
