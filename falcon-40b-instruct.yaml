@@ -11,7 +11,7 @@ urls:
   - https://huggingface.co/TheBloke/falcon-40b-instruct-GGML
 
 config_file: |
-    backend:falcon-40b-instruct
+    backend: falcon-40b-instruct
     parameters:
       model: falcon40b-instruct.ggmlv3.q5_K_S.bin
       top_k: 80
@@ -23,7 +23,7 @@ config_file: |
       system: "SYSTEM:"
       assistant: "ASSISTANT:"
     template:
-      completion: "falcon-completion"
+      completion: falcon-completion
       chat: falcon-chat
 
 files:
