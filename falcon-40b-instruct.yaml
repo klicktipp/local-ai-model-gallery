@@ -28,7 +28,7 @@ config_file: |
 
 files:
     - filename: "falcon40b-instruct.ggmlv3.q5_K_S.bin"
-      sha256: "3b2fd7cca97284467de0be8f638925f40cbff4c70a2e10ba1094f83bfa24d86b"
+      sha256: "1bd462dbf24adeb1e129341fd23d0eb830478b1ca8ad342cb4ae8588e4572a67"
       uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/falcon40b-instruct.ggmlv3.q5_K_S.bin"
 
 prompt_templates:
