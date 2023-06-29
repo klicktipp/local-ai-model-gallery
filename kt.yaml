@@ -8,13 +8,14 @@ urls:
     - https://huggingface.co/TheBloke/GPlatty-30B-GGML
 
 config_file: |
-    backend: llama
+    backend: gpt4all-j
     parameters:
-      model: gplatty-30b.ggmlv3.q5_K_S.bin
+      model: gplatty-30b.ggmlv3.q3_K_S.bin
       top_k: 80
       temperature: 0.8
       top_p: 0.7
     context_size: 16384
+    mmap: false
     roles:
       user: "USER:"
       system: "SYSTEM:"
@@ -24,9 +25,13 @@ config_file: |
       chat: kt-chat
 
 files:
-    - filename: "gplatty-30b.ggmlv3.q5_K_S.bin"
-      sha256: "e7c48e4b3f7d5b56d60ab5790b9a350ae57ea915f6df437174730eefa71babbe"
-      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/gplatty-30b.ggmlv3.q5_K_S.bin"
+    - filename: "gplatty-30b.ggmlv3.q3_K_S.bin"
+      sha256: "027e95c2815cf0c032e2ba95359356fb616ffb867a3adb503f944c6fe99e811f"
+      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/gplatty-30b.ggmlv3.q3_K_S.bin"
+
+#    - filename: "gplatty-30b.ggmlv3.q5_K_S.bin"
+#      sha256: "e7c48e4b3f7d5b56d60ab5790b9a350ae57ea915f6df437174730eefa71babbe"
+#      uri: "https://kt-ai-stack.s3.amazonaws.com/local-ai/gpt4all.io/models/gplatty-30b.ggmlv3.q5_K_S.bin"
 
 prompt_templates:
 - name: "kt-completion"
