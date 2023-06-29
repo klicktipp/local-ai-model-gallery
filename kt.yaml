@@ -8,14 +8,14 @@ urls:
     - https://huggingface.co/TheBloke/GPlatty-30B-GGML
 
 config_file: |
-    backend: gpt4all-j
+    backend: llama
     parameters:
       model: gplatty-30b.ggmlv3.q3_K_S.bin
       top_k: 80
       temperature: 0.8
       top_p: 0.7
     context_size: 16384
-    mmap: false
+    mmap: true
     roles:
       user: "USER:"
       system: "SYSTEM:"
