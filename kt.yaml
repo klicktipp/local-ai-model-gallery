@@ -14,8 +14,8 @@ config_file: |
       top_k: 80
       temperature: 0.8
       top_p: 0.7
-    context_size: 16384
-    mmap: true
+    context_size: 4096
+    mmap: false
     roles:
       user: "USER:"
       system: "SYSTEM:"

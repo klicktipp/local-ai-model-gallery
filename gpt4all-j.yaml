@@ -12,10 +12,10 @@ config_file: |
       temperature: 0.2
       top_p: 0.7
     context_size: 1024
+    mmap: false
     template:
       completion: "gpt4all-completion"
       chat: gpt4all-chat
-mmap: false
 
 files:
     - filename: "ggml-gpt4all-j"
