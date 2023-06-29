@@ -7,11 +7,11 @@ description: |
 license: "Apache 2.0"
 
 urls:
-  - https://huggingface.co/tiiuae/falcon-40b-instruct
-  - https://huggingface.co/TheBloke/falcon-40b-instruct-GGML
+    - https://huggingface.co/tiiuae/falcon-40b-instruct
+    - https://huggingface.co/TheBloke/falcon-40b-instruct-GGML
 
 config_file: |
-    backend: falcon-40b-instruct
+    backend: gpt4all-j
     parameters:
       model: falcon40b-instruct.ggmlv3.q5_K_S.bin
       top_k: 80
